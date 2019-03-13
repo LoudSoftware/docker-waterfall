@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  paper:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "TRUE"
+      ONLINE_MODE: "FALSE"
+      TYPE: "PAPER"
+      VERSION: "LATEST"
+      hostname: paper
+    volumes:
+      - ./data:/data
+  waterfall:
+    image: loudsoftware/waterfall
+    hostname: waterfall
+    ports:
+      - "0.0.0.0:25565:25577"
+    links: 
+      - paper:paper
+    volumes:
+      - ./server:/server
+      - ./config.yml:/server/config.yml
+
+
