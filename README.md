@@ -1,3 +1,5 @@
+# Not supported/maintained anymore since @itzg made a more elaborate version [here](https://github.com/itzg/docker-bungeecord)
+
 This is a docker image of [Waterfall](https://github.com/PaperMC/Waterfall) a drop-in replacement for [BungeeCord](https://github.com/SpigotMC/BungeeCord) and is intended to be used as a frontend of a cluster of [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/) conatiners.
 
 ## Using with itzg/minecraft-server image
